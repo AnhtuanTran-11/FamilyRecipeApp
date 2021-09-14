@@ -4,8 +4,8 @@ import { useHistory } from "react-router-dom";
 import axios from "axios";
 import * as yup from "yup";
 import validationSchema from "../validation/validationSchema";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 //Initial form value
 const initialFormValues = {
@@ -28,7 +28,8 @@ const initialDisabled = [];
 
 //<<<<<<<<<<<Styles>>>>>>>>>>//
 // Toggle password icon
-const eye = <FontAwesomeIcon icon={faEye} />;
+// const eye = <FontAwesomeIcon icon={faEye} />;
+const eye = <div>Toggle</div>
 //Global style
 const GlobalStyle = createGlobalStyle`
 html {

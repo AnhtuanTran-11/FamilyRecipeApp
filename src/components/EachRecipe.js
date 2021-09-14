@@ -5,8 +5,8 @@ import axiosWithAuth from "../utils/axiosWithAuth";
 import { deleteRecipe } from "../store/actions";
 import styled from "styled-components";
 import image from "../images/bg.jpg";
-import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const RecipeWrapper = styled.div`
   padding: 1.5rem;
@@ -175,22 +175,22 @@ function EachRecipe(props) {
               </p>
               <br />
 
-              <FontAwesomeIcon
+              <div
                 style={iconStyleObject}
-                icon={faEdit}
+                // icon={faEdit}
                 className="fa-2x"
                 onClick={editClick}
                 onMouseOver={handleIconHover}
                 onMouseOut={handleIconLeave}
-              ></FontAwesomeIcon>
-              <FontAwesomeIcon
+              />
+              <di
                 style={iconStyleObject}
-                icon={faTrash}
+                // icon={faTrash}
                 className="fa-2x"
                 onClick={deleteHandler}
                 onMouseOver={handleIconHover}
                 onMouseOut={handleIconLeave}
-              ></FontAwesomeIcon>
+              />
               <i className="fal fa-edit"></i>
             </div>
           </section>
