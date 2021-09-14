@@ -46,5 +46,9 @@
   },
   "devDependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.4"
+  },
+  "engines": {
+    "node": "16.0.0",
+    "npm": "7.20.1"
   }
 }

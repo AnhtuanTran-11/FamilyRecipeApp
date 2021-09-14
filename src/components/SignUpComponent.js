@@ -28,7 +28,7 @@ const initialDisabled = [];
 
 //<<<<<<<<<<<Styles>>>>>>>>>>//
 // Toggle password icon
-// const eye = <FontAwesomeIcon icon={faEye} />;
+const eye = <FontAwesomeIcon icon={faEye} />;
 //Global style
 const GlobalStyle = createGlobalStyle`
 html {
