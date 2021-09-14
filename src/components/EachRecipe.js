@@ -5,8 +5,29 @@ import axiosWithAuth from "../utils/axiosWithAuth";
 import { deleteRecipe } from "../store/actions";
 import styled from "styled-components";
 import image from "../images/bg.jpg";
-// import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { getByDisplayValue } from "@testing-library/react";
+
+const Button = styled.button`
+    padding: 0.2rem;
+    margin: 1rem;
+    font-family: 'Permanent Marker';
+    border-radius: 25%;
+    font-size: 1.5rem;
+    border: 2px dashed #49BF9D;
+    background-color: #49BF9D;
+    color: black;
+    margin-left: 1rem;
+    :disabled{
+      background-color: tomato;
+      border: 2px solid white;
+      color: white;
+    }
+      :hover{
+      background-color: white;
+      color: tomato;
+      border: 2px solid tomato;
+    }
+`
 
 const RecipeWrapper = styled.div`
   padding: 1.5rem;
@@ -175,22 +196,22 @@ function EachRecipe(props) {
               </p>
               <br />
 
-              <div
+              <Button
                 style={iconStyleObject}
-                // icon={faEdit}
                 className="fa-2x"
                 onClick={editClick}
                 onMouseOver={handleIconHover}
                 onMouseOut={handleIconLeave}
-              />
-              <di
+              >Edit
+              </Button>
+              <Button
                 style={iconStyleObject}
-                // icon={faTrash}
                 className="fa-2x"
                 onClick={deleteHandler}
                 onMouseOver={handleIconHover}
                 onMouseOut={handleIconLeave}
-              />
+              >Delete
+              </Button>
               <i className="fal fa-edit"></i>
             </div>
           </section>

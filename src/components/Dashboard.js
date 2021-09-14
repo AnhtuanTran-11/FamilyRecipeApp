@@ -48,7 +48,6 @@ const Dashboard = (props) => {
 
   return (
     <React.Fragment>
-      <h1>Welcome</h1>
       
       {/* user is able to see all the recipes 
       user can click on a recipe
