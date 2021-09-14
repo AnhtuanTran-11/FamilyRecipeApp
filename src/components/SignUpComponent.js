@@ -5,7 +5,7 @@ import axios from "axios";
 import * as yup from "yup";
 import validationSchema from "../validation/validationSchema";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEye } from "@fortawesome/free-solid-svg-icons";`
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 //Initial form value
 const initialFormValues = {
@@ -404,9 +404,9 @@ export default function SignUpComponent() {
               autoComplete="new-password"
               key="password"
             />
-            {/* <Eye key="eye2" onClick={togglePasswordVisibility}>
+            <Eye key="eye2" onClick={togglePasswordVisibility}>
               {eye}
-            </Eye> */}
+            </Eye>
 
             <label htmlFor="confirmPassword">Confirm Password</label>
             <StyledInput
@@ -418,9 +418,9 @@ export default function SignUpComponent() {
               autoComplete="new-password"
               key="confirmPassword"
             />
-            {/* <Eye key="eye" onClick={togglePasswordVisibility}>
+            <Eye key="eye" onClick={togglePasswordVisibility}>
               {eye}
-            </Eye> */}
+            </Eye>
 
             <StyledButton
               key="styledButton"
