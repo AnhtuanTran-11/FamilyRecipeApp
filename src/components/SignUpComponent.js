@@ -352,7 +352,7 @@ export default function SignUpComponent() {
   };
 
   return (
-    <>
+    <div>
       <GlobalStyle key="globalStyle" />
       <StyledFormWrapper key="formWrapper">
         <img
@@ -442,6 +442,6 @@ export default function SignUpComponent() {
           </div>
         </StyledForm>
       </StyledFormWrapper>
-    </>
+    </div>
   );
 }
