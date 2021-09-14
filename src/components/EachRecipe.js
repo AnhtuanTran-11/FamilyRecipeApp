@@ -13,20 +13,10 @@ const Button = styled.button`
     font-family: 'Permanent Marker';
     border-radius: 25%;
     font-size: 1.5rem;
-    border: 2px dashed #49BF9D;
-    background-color: #49BF9D;
+    border: 2px dashed black;
+    background-color: white;
     color: black;
     margin-left: 1rem;
-    :disabled{
-      background-color: tomato;
-      border: 2px solid white;
-      color: white;
-    }
-      :hover{
-      background-color: white;
-      color: tomato;
-      border: 2px solid tomato;
-    }
 `
 
 const RecipeWrapper = styled.div`
@@ -198,7 +188,6 @@ function EachRecipe(props) {
 
               <Button
                 style={iconStyleObject}
-                className="fa-2x"
                 onClick={editClick}
                 onMouseOver={handleIconHover}
                 onMouseOut={handleIconLeave}
@@ -206,7 +195,6 @@ function EachRecipe(props) {
               </Button>
               <Button
                 style={iconStyleObject}
-                className="fa-2x"
                 onClick={deleteHandler}
                 onMouseOver={handleIconHover}
                 onMouseOut={handleIconLeave}
