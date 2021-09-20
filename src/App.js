@@ -28,7 +28,7 @@ const App = () => {
         <PrivateRoute path="/dashboard" component={Dashboard} />
         <Route path="/login" component={LoginForm} />
         <Route path="/signup" component={SignUpComponent} />
-        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/" component={LoginForm} />
       </Switch>
     </div>
   );
