@@ -10,7 +10,7 @@ const axiosWithAuth = () => {
     headers: {
       Authorization: token,
     },
-    baseURL: "https://familyrecipe-app-backend.herokuapp.com", //*add baseURL for endpoint
+    baseURL: "https://family-recipe-backend-anhtuan.herokuapp.com/", //*add baseURL for endpoint
   });
 };
 
